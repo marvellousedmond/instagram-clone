@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: #fafafa;
+	font-size: 14px;
+}
+
+.signup__wrapper .signup__header{
+	max-width: 350px;
+	width: 100%;
+	height: auto;
+	margin: 50px auto;
+}
+
+.signup__wrapper .signup__header .signup__top,
+.signup__rapper .signup__signup{
+	background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    padding: 40px 40px 20px;
+}
+
+.signup__wrapper .signup__header .signup__logo img{
+	display: block;
+	margin: 0 auto 35px;
+}
+
+.signup__wrapper .signup__header .signup__form .signup__input-field{
+	margin-bottom: 5px;
+}
+
+.signup__wrapper .signup__header .signup__form .signup__input-field .signup__input{
+	width: 100%;
+	background: #fafafa;
+	border: 1px solid #efefef;
+	font-size: 12px;
+	border-radius: 3px;
+	color: #262626;
+	padding: 10px;
+}
+
+.signup__wrapper .signup__header .signup__form .signup__input-field .signup__input:focus{
+	border: 1px solid #b2b2b2;
+}
+
+.signup__wrapper .signup__header .signup__form .signup__btn{
+	position: relative;
+  padding: 8px 16px;
+  background-color: #385185;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.signup__wrapper .signup__header .signup__form .signup__btn .signup__btn-text{
+	font: bold 'Quicksand', san-serif;
+  color: white;
+  transition: all 0.2s;
+}
+
+
+.signup__wrapper .signup__header .signup__or{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 15px;
+	margin: 15px 0 20px;
+}
+
+.signup__wrapper .signup__header .signup__or .signup__line{
+	width: 105px;
+	height: 2px;
+	background: #efefef
+}
+
+.signup__wrapper .signup__header .signup__or p{
+	color: #999;
+	font-size: 12px;
+}
+
+.signup__wrapper .signup__dif .signup__fb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.signup__wrapper .signup__dif .signup__fb img{
+	width: 16px;
+	height: 16px;
+}
+
+.signup__wrapper .signup__dif  .signup__fb p{
+	color: #385185;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.signup__wrapper .signup__dif .signup__forgot{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.signup__wrapper .signup__dif .signup__forgot a{
+	color: #003569;
+}
+
+.signup__wrapper .signup__signup{
+	margin: 10px 0 20px;
+	padding: 25px 40px;
+	text-align: center;
+	color: #262626;
+}
+
+.signup__wrapper .signup__signup a{
+	color: #3897f0;
+}
+
+.signup__wrapper .signup__apps{
+	text-align: center;
+	color: #262626;
+}
+
+.signup__wrapper .signup__apps p{
+	margin-bottom: 20px;
+}
+
+.signup__wrapper .signup__apps a img{
+	width: 135px;
+	height: 40px;
+	margin: 0 5px;
+}
+
+.signup__footer{
+	max-width: 935px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.signup__footer .signup__links ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.signup__footer .signup__links ul li a{
+	color: #003569;
+	font-size: 12px;
+}
+
+.signup__footer .signup__copyright{
+	color: #999;	
+}

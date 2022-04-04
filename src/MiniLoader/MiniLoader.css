@@ -1,0 +1,15 @@
+.miniloader__loader{
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.2rem solid white;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  margin: auto;
+  animation: loader 500ms linear infinite;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}

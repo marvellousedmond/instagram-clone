@@ -1,0 +1,280 @@
+*
+{
+  margin: 0 ;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 10px;
+}
+
+body{
+  font-family: "opens sams", Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: #262626;
+  padding-bottom: 3rem;
+}
+
+img{
+  display: block;
+}
+
+.profile__container{
+  max-width: 93.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.profile__btn{
+  all: unset;
+  background: none;
+  color: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.profile__btn:focus{
+  outline: 0.5rem auto #4090fe;
+}
+
+.profile__{
+  padding: 5rem 0;
+}
+
+.profile:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.profile__image{
+  float: left;
+  width: calc(32.333% - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.profile__image img{
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 200px;
+}
+
+.profile__user-setting,
+.profile__stats,
+.profile__bio{
+  float: left;
+  width: calc(66.666% - 2rem);
+}
+
+.profile__username{
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.profile__edit-btn{
+  font-size: 1.4rem;
+  line-height: 1.8;
+  border: 0.1rem solid #dbdbdb;
+  border-radius: 0.3rem;
+  padding: 0 2.4rem;
+  margin-left: 2rem;
+}
+
+.profile__setting-btn{
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.profile__stats{
+  margin-top: 2.3rem;
+}
+
+.profile__stats li{
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+
+.profile__stats li:last-of-type{
+  margin-right: 0;
+}
+   
+.profile__bio{
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 2.3rem;
+}
+
+.profile__real-name,
+.profile__stats-count,
+.profile-edit-btn{
+  font-weight: 600;
+}
+
+/* the following code will only run if your browser support css grid*/
+
+@supports(display: grid){
+  .profile__{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 3rem;
+    align-items: center;
+  }
+
+  .profile__image{
+    grid-row: 1 / -1;
+  }
+
+  .profile__image,
+  .profile__user-setting,
+  .profile__stats,
+  .profile__bio,
+  .profile__gallery{
+    width: auto;
+    margin: 0;
+  }
+
+  @media (max-width: 40rem){ 
+    .profile{
+      grid-template-columns: auto 1fr;
+      row-gap: 1.5rem;
+    }
+
+    .profile__image{
+      grid-row: 1 / 2;
+    }
+
+    .profile__user-setting{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-row: 1rem;
+    }
+
+    .profile-edit-btn,
+    .profile__bio,
+    .profile__stats{
+      grid-column: 1 / -1;
+    }
+
+    .profile__user-setting,
+    .profile__edit-btn,
+    .profile__setting-btn,
+    .profile__bio,
+    .profile__stats {
+      margin: 0;
+    }
+  }
+}
+
+.profile__gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+  padding-bottom: 3rem;
+}
+
+/* loader */
+
+.profile__loader{
+  width: 5rem;
+  height: 5rem;
+  border: 0.6rem solid #999;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: loader 500ms linear infinite;
+}
+/* media Query */
+
+@media screen and (max-width: 40rem) {
+  .profile__{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+  }
+
+  .profile__::after{
+    display: none;
+  }
+
+  .profile__image,
+  .profile__user-setting,
+  .profile__stats{
+    float: none;
+    width: auto;
+  }
+
+  .profile__image img{
+    width: 7.7rem;
+  }
+
+  .profile__user-setting{
+    flex-basis: calc(100% - 10.7rem);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .profile__username{
+    font-size: 2.2rem;
+  }
+
+  .profile__edit-btn{
+    order: 1;
+    padding: 0;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .profile__bio{
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+  .profile__edit-btn,
+  .profile__bio,
+  .profile__stats {
+    flex-basis: 100%;
+  }
+
+  .profile__stats{
+    order: 1;
+    margin-top: 1.5rem;
+  }
+
+  .profile__stats ul{
+    display: flex;
+    text-align: center;
+    padding: 1.2rem 0;
+    border-top: 0.1rem solid #dadada;
+    border-bottom: 0.1rem solid #dadada;
+  }
+
+  .profile__stats li{
+    font-size: 1.4rem;
+    flex: 1;
+    margin: 0;
+  }
+
+  .profile__stats-count{
+    display: black;
+  }
+  /* spinner animation */
+
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}

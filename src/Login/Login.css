@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: #fafafa;
+	font-size: 14px;
+}
+
+.login__wrapper .login__header{
+	max-width: 450px;
+	width: 100%;
+	height: auto;
+	margin: 50px auto;
+}
+
+.login__wrapper .login__header .login__top,
+.login__rapper .login__signup{
+	background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    padding: 50px 50px 60px;
+}
+
+.login__wrapper .login__header .login__logo img{
+	display: block;
+	margin: 0 auto 35px;
+}
+
+.login__wrapper .login__header .login__form .login__input-field{
+	margin-bottom: 5px;
+}
+
+.login__wrapper .login__header .login__form .login__input-field .login__input{
+	width: 100%;
+	background: #fafafa;
+	border: 1px solid #efefef;
+	font-size: 14px;
+	border-radius: 3px;
+	color: #262626;
+	padding: 10px;
+}
+
+.login__wrapper .login__header .login__form .login__input-field .login__input:focus{
+	border: 1px solid #b2b2b2;
+}
+
+.login__wrapper .login__header .login__form .login__btn{
+	margin: 10px 0;
+	background-color: #385185;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+}
+
+.login__wrapper .login__header .login__form .login__btn a{
+	color: #fff;
+	display: block;
+}
+
+.login__wrapper .login__header .login__or{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 15px;
+	margin: 15px 0 20px;
+}
+
+.login__wrapper .login__header .login__or .login__line{
+	width: 105px;
+	height: 2px;
+	background: #efefef
+}
+
+.login__wrapper .login__header .login__or p{
+	color: #999;
+	font-size: 14px;
+}
+
+.login__wrapper .login__dif .login__fb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login__wrapper .login__dif .login__fb img{
+	width: 16px;
+	height: 16px;
+}
+
+.login__wrapper .login__dif  .login__fb p{
+	color: #385185;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.login__wrapper .login__dif .login__forgot{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.login__wrapper .login__dif .login__forgot a{
+	color: #003569;
+}
+
+.login__wrapper .login__signup{
+	margin: 10px 0 20px;
+	padding: 25px 40px;
+	text-align: center;
+	color: #262626;
+}
+
+.login__wrapper .login__signup a{
+	color: #3897f0;
+}
+
+.login__wrapper .login__apps{
+	text-align: center;
+	color: #262626;
+}
+
+.login__wrapper .login__apps p{
+	margin-bottom: 20px;
+}
+
+.login__wrapper .login__apps a img{
+	width: 135px;
+  display: inline;
+	height: 40px;
+	margin: 0 5px;
+}
+
+.login__footer{
+	max-width: 935px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.login__footer .login__links ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.login__footer .login__links ul li a{
+	color: #003569;
+	font-size: 14px;
+}
+
+.login__footer .login__copyright{
+	color: #999;	
+}
+
+.login__btn{
+  font-size: 14px;
+	position: relative;
+  background-color: #385185;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.login__btn-text{
+	font: bold 'Quicksand', san-serif;
+  color: white;
+  transition: all 0.2s;
+}
